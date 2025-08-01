@@ -140,7 +140,18 @@ li {
   background-color: var(--green-color);
   color: var(--primary-color);
 }
+.btn-white {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-weight: var(--normal-fw);
+  transition: var(--transition);
+}
 
+.btn-white:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
 .btn_golden {
   background-color: var(--golden-color);
   color: var(--primary-color);
