@@ -9,7 +9,9 @@
 
 .scroll_navbar {
   border-bottom: var(--text-light);
+  background-color: var(--green-color);
 }
+
 
 .main_navbar-container {
   width: 100%;
@@ -37,6 +39,9 @@
   letter-spacing: -1.5px;
 }
 
+.scroll_navbar .main_navbar-logo h1 {
+  color: var(--primary-color);
+}
 .main_navbar-right-list {
   display: flex;
   align-items: center;
@@ -157,7 +162,7 @@
     transition: var(--transition);
   }
 
-   .main_navbar-menu li a.active {
+  .main_navbar-menu li a.active {
     color: var(--golden-color);
     transform: translateX(5px);
   }

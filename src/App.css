@@ -89,7 +89,7 @@ li {
 }
 
 .section-container {
-  max-width: 60%;
+  max-width: 70%;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -174,4 +174,16 @@ li {
 
 ._underline:hover {
   text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .section-container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .section-container {
+    max-width: 89%;
+  }
 }
