@@ -75,6 +75,14 @@ h6 {
   font-size: var(--text-base);
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
@@ -101,7 +109,7 @@ h6 {
   padding: 1rem 2.2rem;
   font-family: var(--font-family);
   font-size: var(--text-sm);
-  font-weight: var(--medium-fw);
+  font-weight: var(--normal-fw);
   text-decoration: none;
   cursor: pointer;
   border: 2px solid transparent;
@@ -119,28 +127,40 @@ h6 {
 
 .btn_primary:hover {
   background-color: var(--golden-color);
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
-.btn_secondary {
+.btn_outline {
   background-color: var(--primary-color);
   color: var(--green-color);
   border: 2px solid var(--green-color);
 }
 
-.btn_secondary:hover {
+.btn_outline:hover {
   background-color: var(--green-color);
   color: var(--primary-color);
 }
 
-.btn_white {
+.btn_golden {
   background-color: var(--golden-color);
   color: var(--primary-color);
   border: 2px solid var(--golden-color);
 }
 
-.btn_white:hover {
+.btn_golden:hover {
   background-color: transparent;
   color: var(--text-color);
   border: 2px solid var(--primary-color);
+}
+
+._text-light {
+  color: var(--text-light);
+}
+
+._underline {
+  text-decoration: underline;
+}
+
+._underline:hover {
+  text-decoration: none;
 }

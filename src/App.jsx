@@ -1,14 +1,13 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
-    <>
-      <div className="container below-navbar">
-        <p className="btn btn_primary">Hello</p>
-        <p className="btn btn_secondary">there</p>
-        <p className="btn btn_white">World</p>
-      </div>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes className="app_wrapper"></Routes>
+    </BrowserRouter>
   );
 };
 
