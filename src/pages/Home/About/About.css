@@ -1,0 +1,122 @@
+.h_about-section {
+  width: 100%;
+  background-color: var(--light-grey);
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.home_about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.home_about-left,
+.home_about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.home_about-left span {
+  color: var(--golden-color);
+  font-size: var(--text-lg);
+  font-weight: var(--medium-fw);
+}
+
+.home_about-left h2 {
+  font-weight: var(--medium-fw);
+  letter-spacing: -1.5px;
+  font-size: clamp(2.5rem, 5vw, var(--text-4xl));
+  line-height: 1.1;
+  max-width: 100%;
+}
+
+.home_about-left p {
+  color: var(--text-light);
+  max-width: 100%;
+}
+
+.home_about-learn-more {
+  width: fit-content;
+}
+
+.home_about-brief {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.home_about-brief-item {
+  padding: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--text-light);
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.home_about-brief-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.home_about-brief-item p {
+  font-size: var(--text-xl);
+  font-weight: var(--medium-fw);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.home_about-brief-item:last-child {
+  border-bottom: 1px solid var(--text-light);
+}
+
+.home_about-right .home_about-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.home_about-img img {
+  width: 100%;
+  height: 60vh;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  .home_about-section {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .home_about-left,
+  .home_about-right {
+    width: 50%;
+  }
+
+  .home_about-left h2,
+  .home_about-left p {
+    width: 80%;
+  }
+
+  .home_about-brief-item {
+    width: 80%;
+  }
+  .home_about-brief-item p {
+    font-size: var(--text-2xl);
+  }
+
+  .home_about-img img {
+    height: 70vh;
+  }
+}
