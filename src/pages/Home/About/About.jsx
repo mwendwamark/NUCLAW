@@ -3,6 +3,7 @@ import "./About.css";
 import { NavLink } from "react-router-dom";
 import img from "../../../assets/HomeHero.jpg";
 import { ArrowDownRight } from "lucide-react";
+import Values from "../Values/Values";
 
 const About = () => {
   return (
@@ -48,6 +49,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Values/>
       </section>
     </>
   );

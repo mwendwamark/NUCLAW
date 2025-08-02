@@ -1,0 +1,147 @@
+.home_values {
+  width: 100%;
+  margin: 5rem 0;
+  position: relative;
+  overflow: visible;
+}
+
+.home_values-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  min-height: 500px;
+  background-color: var(--green-color);
+}
+
+.home_values-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #205752;
+  z-index: 0;
+}
+
+.home_values-left {
+  max-width: 50%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.protruding-image {
+  width: 60%;
+  height: 120%;
+  margin-top: -20%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.home_values-right {
+  position: relative;
+  max-width: 50%;
+  z-index: 1;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0rem;
+}
+
+.home_values-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 90%;
+}
+
+.home_values-content h2 {
+  font-family: "Baskervville", serif;
+  font-size: clamp(2.5rem, 5vw, var(--text-4xl));
+  font-weight: var(--medium-fw);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 1rem;
+}
+
+.home_values-content h2 .golden {
+  color: #9b936b;
+  font-weight: 500;
+}
+
+.home_values-content p {
+  font-size: 1rem;
+  color: #fafafa;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.home_values-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home_values-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .home_values {
+    padding: 2rem 0;
+  }
+
+  .home_values-container {
+    flex-direction: column-reverse;
+    min-height: auto;
+  }
+
+  .home_values-container::after {
+    display: none;
+  }
+
+  .home_values-left,
+  .home_values-right {
+    max-width: 100%;
+  }
+
+  .protruding-image {
+    height: 60vh;
+    margin-bottom: -8rem;
+    width: 90%;
+  }
+
+  .home_values-right {
+    background-color: #205752;
+    padding: 3rem 2rem;
+    order: 2;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .home_values-content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home_values-right {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .home_values-list {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+}
