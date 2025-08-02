@@ -1,6 +1,7 @@
 import About from "./About/About";
 import Hero from "./Hero/Hero";
 import HomeStats from "./Stats/HomeStats";
+import HomeSuccess from "./Success/HomeSuccess";
 import Values from "./Values/Values";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <HomeStats />
       <About />
+      <HomeSuccess/>
     </div>
   );
 };
