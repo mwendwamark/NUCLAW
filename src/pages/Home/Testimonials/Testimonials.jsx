@@ -1,6 +1,7 @@
 import React from "react";
 import "./Testimonials.css";
 import img from "../../../assets/HomeHero.jpg"; // Assuming you have a testimonial image
+import testimonialsData from "../../../Data/Teestimonials"; // Adjust the path as necessary
 
 const Testimonials = () => {
   return (
@@ -16,68 +17,20 @@ const Testimonials = () => {
       </div>
 
       <div className="testimonials_container">
-        <div className="testimonial_card">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          </p>
+        {testimonialsData.map((testimonial) => (
+          <div className="testimonial_card" key={testimonial.id}>
+            <p>{testimonial.text}</p>
 
-          <div className="rating_and_image">
-            <img src={img} alt="" />
+            <div className="rating_and_image">
+              <img src={testimonial.image} alt={testimonial.author} />
 
-            <div className="rating_section">
-              <p>Tiana Donin</p>
-              <span>⭐⭐⭐⭐⭐</span>
+              <div className="rating_section">
+                <p>{testimonial.author}</p>
+                <span>{"⭐".repeat(testimonial.rating)}</span>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="testimonial_card">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          </p>
-
-          <div className="rating_and_image">
-            <img src={img} alt="" />
-
-            <div className="rating_section">
-              <p>Tiana Donin</p>
-              <span>⭐⭐⭐⭐⭐</span>
-            </div>
-          </div>
-        </div>
-        <div className="testimonial_card">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          </p>
-
-          <div className="rating_and_image">
-            <img src={img} alt="" />
-
-            <div className="rating_section">
-              <p>Tiana Donin</p>
-              <span>⭐⭐⭐⭐⭐</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="testimonial_card">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          </p>
-
-          <div className="rating_and_image">
-            <img src={img} alt="" />
-
-            <div className="rating_section">
-              <p>Tiana Donin</p>
-              <span>⭐⭐⭐⭐⭐</span>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

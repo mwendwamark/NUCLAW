@@ -3,8 +3,8 @@ import Hero from "./Hero/Hero";
 import Playvideo from "./PlayVideo/Playvideo";
 import HomeStats from "./Stats/HomeStats";
 import HomeSuccess from "./Success/HomeSuccess";
+import Team from "./Team/Team";
 import Testimonials from "./Testimonials/Testimonials";
-import Values from "./Values/Values";
 
 const Home = () => {
   return (
@@ -15,6 +15,7 @@ const Home = () => {
       <HomeSuccess/>
       <Playvideo/>
       <Testimonials/>
+      <Team/>
     </div>
   );
 };
