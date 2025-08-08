@@ -1,0 +1,138 @@
+.home_CTA {
+  width: 100%;
+  margin: 5rem 0;
+  position: relative;
+  overflow: visible;
+}
+
+.home_CTA-container {
+  width: 100%;
+  /* max-width: 90%; */
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  min-height: 500px;
+  background-color: var(--light-grey);
+}
+
+.home_CTA-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: var(--light-grey);
+  z-index: 0;
+}
+
+.home_CTA-left {
+  max-width: 50%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.protruding-image-2 {
+  width: 60%;
+  height: 120%;
+  margin-top: -20%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.home_CTA-right {
+  position: relative;
+  max-width: 50%;
+  z-index: 1;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0rem;
+}
+
+.home_CTA-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 90%;
+}
+
+.CTA_header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.CTA_header span {
+  color: var(--golden-color);
+  font-size: var(--text-lg);
+  font-weight: var(--medium-fw);
+}
+
+.CTA_header h2 {
+  font-family: "Baskervville", serif;
+  font-size: clamp(2.5rem, 5vw, var(--text-4xl));
+  font-weight: var(--medium-fw);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: var(--text-color);
+}
+
+.CTA_header p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.CTA_buttons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .home_CTA {
+    padding: 2rem 0;
+  }
+
+  .home_CTA-container {
+    flex-direction: column-reverse;
+    min-height: auto;
+  }
+
+  .home_CTA-container::after {
+    display: none;
+  }
+
+  .home_CTA-left,
+  .home_CTA-right {
+    max-width: 100%;
+  }
+
+  .protruding-image-2 {
+    height: 60vh;
+    margin-bottom: -8rem;
+    width: 90%;
+  }
+
+  .home_CTA-right {
+    background-color: var(--primary-color);
+    padding: 3rem 2rem;
+    order: 2;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .home_CTA-content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home_CTA-right {
+    padding: 2rem 1.5rem;
+  }
+}

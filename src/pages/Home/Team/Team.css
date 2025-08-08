@@ -1,13 +1,10 @@
 /* Team Section Styling */
 .home_team {
-  background-color: var(--light-grey);
-  /* padding: 8rem 0; */
-  margin: 3rem 0;
+  background-color: var(--primary-color);
 }
 
 .home_team-container {
   margin: 0 auto;
-  /* padding: 0 2rem; */
 }
 
 .home_team-top {

@@ -1,10 +1,17 @@
 .home_testimonials {
   width: 100%;
-  margin-top: 3rem;
+  padding: 7rem 0 3rem 0;
+  background-color: var(--light-grey);
+}
+
+.home_testimonials-container {
+  gap: 2rem;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  position: relative;
 }
 
 .home_testimonials-header {
@@ -103,7 +110,7 @@
     gap: 1rem;
   }
 
- .testimonial_card {
+  .testimonial_card {
     padding: 1.5rem !important;
   }
 }
