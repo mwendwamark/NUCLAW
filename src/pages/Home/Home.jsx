@@ -1,4 +1,5 @@
 import About from "./About/About";
+import ContactUs from "./ContactUs/ContactUs";
 import Hero from "./Hero/Hero";
 import Playvideo from "./PlayVideo/Playvideo";
 import HomeStats from "./Stats/HomeStats";
@@ -16,6 +17,7 @@ const Home = () => {
       <Playvideo/>
       <Testimonials/>
       <Team/>
+      <ContactUs/>
     </div>
   );
 };

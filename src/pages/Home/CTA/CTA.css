@@ -121,7 +121,6 @@
 
   .home_CTA-right {
     background-color: var(--primary-color);
-    padding: 3rem 2rem;
     order: 2;
     border-radius: 0 0 8px 8px;
   }
@@ -131,8 +130,16 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .home_CTA-right {
-    padding: 2rem 1.5rem;
+@media screen and (max-width: 400px) {
+  .CTA_buttons {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch; /* so the child buttons take full width */
+    width: 100%;
+  }
+
+  .CTA_buttons .btn {
+    width: 100%;
+    text-align: center; /* keep text centered in full-width buttons */
   }
 }

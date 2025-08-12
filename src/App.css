@@ -160,8 +160,8 @@ li {
 
 .btn_golden:hover {
   background-color: transparent;
-  color: var(--text-color);
-  border: 2px solid var(--primary-color);
+  color: var(--golden-color);
+  border: 2px solid var(--golden-color);
 }
 
 ._text-light {
